@@ -1,15 +1,30 @@
-# Binaries for programs and plugins
-*.exe
-*.exe~
-*.dll
-*.so
-*.dylib
+*.swp
+.idea
+docker/*/*.main
+coverage.out
+.DS_Store
+bin/
 
-# Test binary, built with `go test -c`
-*.test
+# Key items from: https://github.com/github/gitignore/blob/master/Global/Emacs.gitignore
+*~
+\#*\#
+.\#*
 
-# Output of the go coverage tool, specifically when used with LiteIDE
-*.out
+# VIM https://github.com/github/gitignore/blob/master/Global/Vim.gitignore
+# swap
+[._]*.s[a-v][a-z]
+[._]*.sw[a-p]
+[._]s[a-v][a-z]
+[._]sw[a-p]
+# session
+Session.vim
+# temporary
+.netrwhist
+*~
+# auto-generated tag files
+tags
 
-# Dependency directories (remove the comment below to include it)
-# vendor/
+# Hidden files in kubernetes
+kubernetes/*/deployments/*/hide/**
+!kubernetes/*/deployments/*/hide/README.md
+
